@@ -1,0 +1,15 @@
+name: map
+description: A minimal google map implementation.
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.1.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_maps_flutter: ^0.5.7
+
+flutter:
+  uses-material-design: true
