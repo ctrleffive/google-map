@@ -28,7 +28,7 @@ class _MapViewState extends State<MapView> {
       color: Colors.blue,
     );
     /// Currently showing only one path from one point to another.
-    /// You add more to a list and make it a set and return. Like below.
+    /// You can add more to a list and make it a set and return. Like below.
     /// Use above methods to generate the path points and create each polyline path from the points.
     /// Good Luck! 😃🤘
     final Set<Polyline> polylineSet = Set.from([polyline]);
