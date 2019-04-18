@@ -1,16 +1,9 @@
-# map
+# Flutter Demo Map
 
-A new Flutter project.
+A minimal google map implementation for a friend 😊
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+## About API Keys
+- Don't use the API key inside the code. It is expired.
+- You need to create a new API key from google api console.
+- Needed APIs are **Places API, Maps SDK for iOS, Maps SDK for Android & Directions API**
+- Change API keys in ``lib/src/constants/common.dart, android/app/src/main/AndroidManifest.xml, ios/Runner/AppDelegate.swift``
