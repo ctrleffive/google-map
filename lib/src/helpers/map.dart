@@ -24,6 +24,8 @@ class MapHelper {
   Future<List<LatLng>> getDirection({@required LatLng start, @required LatLng end}) async {
     final DirectionsResponse directionsResponse = await this._provider.getDirection(start: start, end: end);
 
+    if (directionsResponse.isDenied) throw Exception(directionsResponse.errorMessage);
+
     if (!directionsResponse.hasNoResults) {
       final String encodedPolyLine = directionsResponse.routes.first.overviewPolyline.points;
       final List<LatLng> decodedPoints = this._decodePolyline(encodedPolyLine);
